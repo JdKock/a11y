@@ -62,7 +62,7 @@
       <nav class="container btn-annot-outline" role="navigation" aria-labelledby="main-nav">
         <div class="sr-only" id="main-nav">Main Menu</div>
 
-        <a href="/index.html" class="navbar-brand">
+        <a href="index.html" class="navbar-brand">
           <img class="avatar-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/a11y-logo.png" alt="Logo Accessibility">
         </a>
 
@@ -74,28 +74,28 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <div class="mr-auto">
-            <div class="navbar-nav">
-              <div class="nav-item active">
+            <ul class="navbar-nav" aria-labelledby="main-nav">
+              <li class="nav-item active">
                 <a class="nav-link btn-annot-outline" href="index.html" id="main-menu" aria-current="page">
                   Home <span class="sr-only">(current)</span></a>
-                <div class="pagination pagination-navbar">
-                  <div class="page-item"><a class="page-link" href="index.html">Good</a></div>
-                  <div class="page-item"><a class="page-link active" href="index-bad.html">Bad</a></div>
-                </div>
-              </div>
-              <div class="nav-item">
+                <ul class="pagination pagination-navbar">
+                  <li class="page-item"><a class="page-link" href="index.html">Good</a></li>
+                  <li class="page-item"><a class="page-link active" href="index-bad.html" aria-current="page">Bad <span class="sr-only">(current)</span></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="article.html">Article</a>
-              </div>
-              <div class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="media.html">Media</a>
-              </div>
-              <div class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="request.html">Request</a>
-              </div>
-              <div class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="table.html">Tables</a>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
 
           <nav class="form-inline my-2 my-lg-0 btn-annot-outline" role="search">
@@ -142,7 +142,7 @@
         <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
 
         <h2 id="cards-main" class="sr-only">Selected for you</h2>
-        
+
         <div class="row">
 
           <div class="col-md-6 col-lg-4">
@@ -225,10 +225,10 @@
                   <h3 class="card-title">
                     Responsibilities for:
                   </h3>
-                  <div class="mb-2"><a href="/index.html" class="link-linklist">User Experience</a></div>
-                  <div class="mb-2"><a href="/index.html" class="link-linklist">Developers</a></div>
-                  <div class="mb-2"><a href="/index.html" class="link-linklist">Editors</a></div>
-                  <div class="mb-2"><a href="/index.html" class="link-linklist">Product Owners</a></div>
+                  <div class="mb-2"><a href="index.html" class="link-linklist">User Experience</a></div>
+                  <div class="mb-2"><a href="index.html" class="link-linklist">Developers</a></div>
+                  <div class="mb-2"><a href="index.html" class="link-linklist">Editors</a></div>
+                  <div class="mb-2"><a href="index.html" class="link-linklist">Product Owners</a></div>
                   <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal14">14</button>
                 </div>
               </div>
@@ -290,19 +290,19 @@
       <div class="d-inline-block annot-relative">
         <div class="pipe-links list-inline mt-2 mb-3 btn-annot-outline">
           <div class="list-inline-item">
-            <a href="/index.html">About A11Y</a>
+            <a href="index.html">About A11Y</a>
           </div>
           <div class="list-inline-item">
-            <a href="/index.html">Universal Design</a>
+            <a href="index.html">Universal Design</a>
           </div>
           <div class="list-inline-item">
-            <a href="/index.html">Privacy en cookies</a>
+            <a href="index.html">Privacy en cookies</a>
           </div>
           <div class="list-inline-item">
-            <a href="/index.html">Disclaimer</a>
+            <a href="index.html">Disclaimer</a>
           </div>
           <div class="list-inline-item">
-            <a href="/index.html">Accessibility</a>
+            <a href="index.html">Accessibility</a>
           </div>
         </div>
         <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal14">14</button>
@@ -694,18 +694,18 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
   <div>
     <div class="active">
       <!-- No indication of current / active link -->
-      <a href="/index.html">Home</a>
+      <a href="index.html">Home</a>
       <!-- No nested relationsship present -->
       <div>
-        <div><a class="active" href="/index.html">Good</a></div>
-        <div><a href="/index-bad.html">Bad</a></div>
+        <div><a class="active" href="index.html">Good</a></div>
+        <div><a href="index-bad.html">Bad</a></div>
       </div>
     </div>
     <div>
-      <a href="/media.html">Media</a>
+      <a href="media.html">Media</a>
     </div>
     <div>
-      <a href="/table.html">Tables</a>
+      <a href="table.html">Tables</a>
     </div>
   </div>
 </div>
@@ -849,11 +849,11 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 <code class="html">
   <!-- Not using H elements for headings -->
 
-  <span class="brandbar-title">Inaccessible Home Page</span>
+  <h1 class="brandbar-title">Inaccessible Home Page</h1>
 
-  <div class="heading-m">The Baseline</div>
-  <div class="heading-m">Accessibility Champions</div>
-  <div class="heading-m">Expert section</div>
+  <h3>The Baseline</h3v>
+  <h3>Accessibility Champions</h3>
+  <h3>Expert section</h3>
 </code>
 </pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
@@ -1134,7 +1134,7 @@ a:focus { outline: 0; text-decoration: none; border-bottom: 1px solid #767676; }
 Go to other page:
 
 <!-- Link in code and button styling -->
-<a href="/index.html" class="btn btn-primary">Read more...</a>
+<a href="index.html" class="btn btn-primary">Read more...</a>
 
 <!-- Button in code and button styling -->
 <button type="button" class="link-primary">Read more...</button>
@@ -1142,7 +1142,7 @@ Go to other page:
 Staying on same page:
 
 <!-- Link in code and link styling -->
-<a href="/index.html" class="link-primary">Watch the video</a>
+<a href="index.html" class="link-primary">Watch the video</a>
 
 <!-- Button in code and link styling -->
 <button type="button" class="link-primary">Watch the video</button>
@@ -1191,15 +1191,15 @@ Staying on same page:
 <code class="html">
 <!-- Using divs to visually fake items -->
 
-<div class="mb-2"><a href="/index.html" class="link-linklist">User Experience</a></div>
-<div class="mb-2"><a href="/index.html" class="link-linklist">Developers</a></div>
-<div class="mb-2"><a href="/index.html" class="link-linklist">Editors</a></div>
+<div class="mb-2"><a href="index.html" class="link-linklist">User Experience</a></div>
+<div class="mb-2"><a href="index.html" class="link-linklist">Developers</a></div>
+<div class="mb-2"><a href="index.html" class="link-linklist">Editors</a></div>
 
 <!-- Applying CSS styling on non semantic elements  -->
 
 <div class="list-styling">
-  <div class="list-item"><a href="/index.html">About A11Y</a></div>
-  <div class="list-item"><a href="/index.htm">Universal Design</a></div>
+  <div class="list-item"><a href="index.html">About A11Y</a></div>
+  <div class="list-item"><a href="index.htm">Universal Design</a></div>
   <div class="list-item">...</div>
 </div>
 </code>
