@@ -187,7 +187,7 @@
             <div class="card mb-4">
               <div class="card-block">
                 <div class="annot-relative">
-                  <div class="card-title btn-annot-outline">Accessibility Champions</div>
+                  <h3 class="card-title btn-annot-outline">Accessibility Champions</h3>
                   <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal08">08</button>
                 </div>
                 <img class="card-img-top mb-4 img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/a11y-champs.png" alt="">
@@ -851,9 +851,13 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 
   <h1 class="brandbar-title">Inaccessible Home Page</h1>
 
+  <h2 class="sr-only">Selected for you</h2>
   <h3>The Baseline</h3v>
   <h3>Accessibility Champions</h3>
   <h3>Expert section</h3>
+
+  <!-- Optional with ARIA -->
+  <div role="heading" aria-level="3">...</div>
 </code>
 </pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
@@ -905,7 +909,10 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 
               <pre class="highlight">
 <code class="html">
-<img src="/infographic-xyz.png">
+<img src="/infographic-xyz.png" alt="Cutout of infographic for the
+          9 step Getting Started with accessibility part. Step 1,
+          roles and responsibilities, and step 2, personas,
+          are partly shown.">
 </code>
 </pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
@@ -956,7 +963,7 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 
               <pre class="highlight">
 <code class="html">
-<img src="/experts.jpg" alt="image">
+<img src="/experts.jpg" alt="">
 </code>
 </pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
